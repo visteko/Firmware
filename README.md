@@ -42,4 +42,6 @@ Note: Firmware name should be changed to BOOT.bin before put it to SD card. e.g.
    The _x_ of single marker 3 is "300.00" (in milimeter), _y_ of single marker 3 is is "303.03", _z_ of single marker 3 is is "3030.30"  
    _vep_ is the tag of end of packet.  
    
-   > If no single marker detected in the current scene, the VISTEKO Tracker will reply "No single marker" string to the PC Client.
+   > If no single marker detected in the current scene, the VISTEKO Tracker will reply "No single marker" string to the PC Client.  
+   
+   **stop** string cmd to VISTEKO OT to disable tracking and let VISTEKO OT go into low power mode.
