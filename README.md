@@ -10,6 +10,16 @@ Note: Firmware name should be changed to BOOT.bin before put it to SD card. e.g.
 ### BOOT(ID-103, Date- 2018.3.5).bin
    the updated firmware for VISTEKO Tracker with ID "103".   
    
+### PortHelper.exe   
+   A TCP/IP test program that can be run in Windows OS. Users may refer to the following step to work with VISTEKO Tracer,  
+   1. select "网络服务器" tab.  
+   2. set "端口" 1234, then click "创建" button.  
+   3. power on VISTEKO Tracker and Ethernet cable connection done.  
+   4. wait for the "vconnected" string show in the "接收区", which means that the VISTEKO Tracker TCP/IP connection done.
+   5. input "start" string in the "发送区", then click "发送" button.  
+   6. users may see "vstarted" string replyed in the "接收区", which means that the VISTEKO Tracker was ready to receive request from PC client.  
+   7. input request cmd, such as "req1", "req2", or "reqsm", in the "发送区", then click "发送".  
+   8. users will get the measurement result and shows in the "接收区", the protocal of the returen packet will described as follows.
    
 ## SDK Protocal  
    **start** -- PC client should firstly send "start" string to the VISTEKO Tracker to enable 3D measurement and tracking functions. If it works, the tracker will reply "vstarted" string to the PC client via TCP/IP.  
